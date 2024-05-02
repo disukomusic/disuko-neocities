@@ -83,6 +83,8 @@ ul {
 #wrapper {
   margin: 0 auto;
   max-width: 860px;
+  overflow: auto;
+  padding-bottom: 100px;
 }
 .content {
   padding: 10px;
@@ -139,8 +141,8 @@ ul {
 }
 
 button {
-  width: 190px;
-  height: 35px;
+  width: 88px;
+  height: 33px;
   background-color: var(--mid-color);
   color: var(--dkest-color);
   font-weight: bold;
@@ -436,3 +438,22 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
+
+.viewable-img {
+  display: block;
+  overflow: hidden;
+
+}
+
+.viewable-img img {
+  display: block;
+  width: 200px;
+  transition: width 0.3s ease;
+  margin: 0 auto;
+}
+
+.viewable-img.expanded img {
+  width: 90%;
+}
+
+
