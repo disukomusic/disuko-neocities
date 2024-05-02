@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -15,279 +14,280 @@
             document.title = titles[titleIndex];
             titleIndex = (titleIndex + 1) % titles.length;
         }
-    
+
         setInterval(toggleTitle, 1000);
     </script>
     <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
-    <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
 
     <style>
-        .cd-grid {
+        .grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
 
         }
-        .cd {
-            
+        .grid-item {
+
             border: 1px solid #ccc;
             padding: 20px;
         }
-        .cd img {
-            
-            width: 100px;
+        .grid-item img {
+
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
-    <div id="container">
+<div id="container">
 
-        <img class="title" src="./images/webcorner.png" />
+    <img class="title" src="./images/webcorner.png" />
 
-        <div id="wrapper">
-            <div class="snowflakes">
-                <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
-                <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
-                <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
-                <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
-                <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
-                <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
-                <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
-                <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
-            </div>
+    <div id="wrapper">
+        <div class="snowflakes">
+            <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
+            <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
+            <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
+            <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
+            <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
+            <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
+            <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
+            <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
+        </div>
 
-            <div class="nav-box">
-                <button><a href="./">home</a></button>
-                <button><a href="./links.html">links</a></button>
-                <button><a href="./collections.html">collections</a></button>
-            </div>
+        <div class="nav-box">
+            <button><a href="./">home</a></button>
+            <button><a href="./links.html">links</a></button>
+            <button><a href="./collections.html">collections</a></button>
+        </div>
 
-            <div id="bottombox">
-                <div class="full-width-box">
-                    <div class="section-title">collections</div>
-                    <div class="content">
-                        <p>here's a page to show off my collections!!</p>
-                    </div>
+        <div id="bottombox">
+            <div class="full-width-box">
+                <div class="section-title">collections</div>
+                <div class="content">
+                    <p>here's a page to show off my collections!!</p>
                 </div>
-                <div class="full-width-box">
-                    <div class="section-title">CDs</div>
-                    <div class="content">
-                        <script src="viewable-image.js"></script>
-                        <div class="cd-grid">
-                            <div class="cd">
-                                <div class="viewable-img">
-                                    <img src="https://f4.bcbits.com/img/a2760613898_16.jpg">
-                                </div>
-                                <a href="https://cametek.bandcamp.com/album/u-u-f-o"><h2>U.U.F.O. - Camellia</h2></a>
-                                <p>this is one of my favorite albums of all time! it got me REALLY into rhythm game soundtracks and inspired me to produce Interdimensional Ice Cream Parlor!</p>
+            </div>
+            <div class="full-width-box">
+                <div class="section-title">CDs</div>
+                <div class="content">
+                    <script src="viewable-image.js"></script>
+                    <div class="grid">
+                        <div class="grid-item">
+                            <div class="viewable-img">
+                                <img src="https://f4.bcbits.com/img/a2760613898_16.jpg">
                             </div>
-
-                            <div class="cd">
-                                <div class="viewable-img">
-                                    <img src="https://snailmerch.com/cdn/shop/products/e_jacket.png?v=1666345053&width=990">
-                                </div>
-                                <a href="https://snailmerch.com/products/%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%83%B3-%E3%83%9D%E3%83%83%E3%83%97-%E2%85%B0-%E2%85%B1-collection"><h2>Alien Pop I & II Collection - Snail's House</h2></a>
-                                <p>snail's house never fails to make me smile :) these albums got me into kawaii future bass and helped define essentially my entire aesthetic for the past 5 years</p>
-                            </div>
-
-                            <div class="cd">
-                                <div class="viewable-img">
-                                    <img src="https://f4.bcbits.com/img/a3430792345_10.jpg">
-                                </div>
-                                <a href="https://disuko.bandcamp.com/album/interdimensional-ice-cream-parlor"><h2>Interdimensional Ice Cream Parlor - disuko</h2></a>
-                                <p>it's my own album lol</p>
-                            </div>
-
-                            <div class="cd">
-                                <div class="viewable-img">
-                                    <img src="https://f4.bcbits.com/img/a3958762968_16.jpg">
-                                </div>
-                                <a href="https://thedazeoh.bandcamp.com/album/methomania"></a><h2>methomania - The Daze</h2>
-                                <p>release album of a band local to my hometown!</p>
-                            </div>
+                            <a href="https://cametek.bandcamp.com/album/u-u-f-o">
+                                <h2>U.U.F.O. - Camellia</h2>
+                            </a>
+                            <p>this is one of my favorite albums of all time! it got me REALLY into rhythm game soundtracks and inspired me to produce Interdimensional Ice Cream Parlor!</p>
                         </div>
 
-                    </div>
-                </div>
-                <div class="full-width-box">
-                    <div class="section-title">Vinyl</div>
-                    <div class="content">
-                        <div class="cd-grid">
-                            <div class="cd">
-                                <div class="viewable-img">
-                                    <img src="https://cdn.hmv.com/r/w-1280/hmv/files/ae/ae243b08-3be4-491c-9e40-106c01f8b25c.jpg">
-                                </div>
-                                <a href="https://www.discogs.com/release/12896525-Sophie-Oil-Of-Every-Pearls-Un-Insides"><h2>Oil of Every Pearl's Un-Insides - SOPHIE</h2></a>
-                                <p>i only heard of SOPHIE shortly after her passing, but her creativity as a producer is unmatched! 
-                                listening to her music helped me understand a lot about myself, creative expression, and gender. 
-                                </p>
+                        <div class="grid-item">
+                            <div class="viewable-img">
+                                <img src="https://snailmerch.com/cdn/shop/products/e_jacket.png?v=1666345053&width=990">
                             </div>
+                            <a href="https://snailmerch.com/products/%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%83%B3-%E3%83%9D%E3%83%83%E3%83%97-%E2%85%B0-%E2%85%B1-collection">
+                                <h2>Alien Pop I & II Collection - Snail's House</h2>
+                            </a>
+                            <p>snail's house never fails to make me smile :) these albums got me into kawaii future bass and helped define essentially my entire aesthetic for the past 5 years</p>
                         </div>
 
+                        <div class="grid-item">
+                            <div class="viewable-img">
+                                <img src="https://f4.bcbits.com/img/a3430792345_10.jpg">
+                            </div>
+                            <a href="https://disuko.bandcamp.com/album/interdimensional-ice-cream-parlor">
+                                <h2>Interdimensional Ice Cream Parlor - disuko</h2>
+                            </a>
+                            <p>it's my own album lol</p>
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="viewable-img">
+                                <img src="https://f4.bcbits.com/img/a3958762968_16.jpg">
+                            </div>
+                            <a href="https://thedazeoh.bandcamp.com/album/methomania"></a>
+                            <h2>methomania - The Daze</h2>
+                            <p>release album of a band local to my hometown!</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
+            <div class="full-width-box">
+                <div class="section-title">Vinyl</div>
+                <div class="content">
+                    <div class="grid">
+                        <div class="grid-item">
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px;">
+                                <div class="viewable-img">
+                                    <img src="https://i.discogs.com/M7lT0HvCKG1PN9WNUnRxhLIt0h4rkD4E5XTN_BO-fkU/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyODk2/NTI1LTE1OTUxMzE3/NjItMjk3My5qcGVn.jpeg">
+                                </div>
+                                <div class="viewable-img">
+                                    <img src="https://i.discogs.com/-OKezauKaRqcIxJucorrY_YSb5h2rMacJHBXZyXCGvk/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyODk2/NTI1LTE1OTUxMzE3/NjctMjI1OC5qcGVn.jpeg">
+                                </div>
+                                <div class="viewable-img">
+                                    <img src="https://i.discogs.com/P9UPIcDkGn2Hhy9DZ9U1Z5MO0zcytNRksiQGGijFCG0/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyODk2/NTI1LTE1OTUxMzE3/NjYtOTcwNS5qcGVn.jpeg">
+                                </div>
+                                <div class="viewable-img">
+                                    <img src="https://i.discogs.com/rTFAZuVPlF1pngLdeZuXO7XhQpkdmq6TBximuZvVrJM/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyODk2/NTI1LTE1OTUxMzE3/NTItMzYwOS5qcGVn.jpeg">
+                                </div>
+                                <div class="viewable-img">
+                                    <img src="https://i.discogs.com/FEYsAuihLqP7CLGDX1pfg9c2P5v57eQpyu9hdBTWgzY/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyODk2/NTI1LTE1NDQyNjA4/NjItNTA1NC5qcGVn.jpeg">
+                                </div>
+                                <div class="viewable-img">
+                                    <img src="https://i.discogs.com/hyWxkEZ5FHiigI3d13F3pYMtQ5Oqmaw9YyXZcWyB3_8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyODk2/NTI1LTE1NDQyNjA5/MDMtNDk4NS5qcGVn.jpeg">
+                                </div>
+                                <div class="viewable-img">
+                                    <img src="https://i.discogs.com/vmaJZ0yp0zlHu4cZ4U8QKUlCERTHPds7xODp84EEqo0/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyODk2/NTI1LTE1OTUxMzE3/NjEtNDQxOC5qcGVn.jpeg">
+                                </div>
+                                <div class="viewable-img">
+                                    <img src="https://i.discogs.com/fffqgRJvJXEqaIgs94pj-PBqf2xXOdViSLkpXHmfApQ/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyODk2/NTI1LTE1OTUxMzE3/NjEtODkyOS5qcGVn.jpeg">
+                                </div>
+                                <div class="viewable-img">
+                                    <img src="https://i.discogs.com/VNLnCHmZGnoBK6Ykoc8ybGCSSVHpoYSUEwjrziFzxuA/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyODk2/NTI1LTE1OTUxMzE3/NjItMjA4Mi5qcGVn.jpeg">
+                                </div>
+                                <div class="viewable-img">
+                                    <img src="https://i.discogs.com/-W-RP4hJOYhu5MiS7y4Ql-ZNb2R4cKGPsrQMEHgMPSs/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyODk2/NTI1LTE1OTUxMzE3/NjctOTc2NC5qcGVn.jpeg">
+                                </div>
+                            </div>
 
+                            <a href="https://www.discogs.com/release/12896525-Sophie-Oil-Of-Every-Pearls-Un-Insides">
+                                <h2>Oil of Every Pearl's Un-Insides - SOPHIE</h2>
+                            </a>
+                            <p>i only heard of SOPHIE shortly after her passing, but her creativity as a producer is unmatched! listening to her music helped me understand a lot about myself, creative expression, and gender.</p>
+                        </div>
+                        <div class="grid-item">
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px;">
+                                    <div class="viewable-img">
+                                        <img src="https://i.discogs.com/4iSmzEosVuXdQ5ktzrVKqcfM5TjELLg7Xl4OChMVx5E/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDE3/NjY4LTE2MzgyMDIw/OTItMzgyOC5qcGVn.jpeg">
+                                    </div>
+                                    <div class="viewable-img">
+                                        <img src="https://i.discogs.com/yPM8M3u2obgBdRAyN2xG-ss09kF9zY7ccyN3adL5cms/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxMDE3/NjY4LTE2MzgyMDIw/OTktNTMzNi5qcGVn.jpeg">
+                                    </div>
+                                </div>
+                            <a href="https://www.discogs.com/release/12896525-Sophie-Oil-Of-Every-Pearls-Un-Insides">
+                                <h2>healing - in love with a ghost</h2>
+                            </a>
+                            <p>i only heard of SOPHIE shortly after her passing, but her creativity as a producer is unmatched! listening to her music helped me understand a lot about myself, creative expression, and gender.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="footer">
+    <div class="webringbox">
+        <div class="content">
+            <button id="prevSiteBtn"><a href="#">previous site</a></button> part of the <span id="webringText"><a href="https://redpandastudios.net">RPS</a></span> Webring
+
+            <button id="nextSiteBtn"><a href="#">next site</a></button>
         </div>
     </div>
 
+    <script>
+        // Function to fetch the list of websites
+        function fetchWebsiteList() {
+            fetch('https://disuko.neocities.org/RPS_WebRing.txt')
+                .then(response => response.text())
+                .then(data => {
+                    const websites = data.trim().split('\n').map(url => url.trim());
+                    const currentURL = window.location.href.trim();
+                    const currentIndex = websites.indexOf(currentURL);
 
-    <div id="footer">
-        <div class="webringbox">
-            <div class="content">
-                <button id="prevSiteBtn"><a href="#">previous site</a></button> part of the <span id="webringText"><a href="https://redpandastudios.net">RPS</a></span> Webring
-
-                <button id="nextSiteBtn"><a href="#">next site</a></button>
-            </div>
-        </div>
-
-        <script>
-            // Function to fetch the list of websites
-            function fetchWebsiteList() {
-                fetch('https://disuko.neocities.org/RPS_WebRing.txt')
-                    .then(response => response.text())
-                    .then(data => {
-                        const websites = data.trim().split('\n').map(url => url.trim());
-                        const currentURL = window.location.href.trim();
-                        const currentIndex = websites.indexOf(currentURL);
-
-                        // Update previous site button
-                        const prevSiteBtn = document.getElementById('prevSiteBtn').querySelector('a');
-                        if (currentIndex > 0) {
-                            prevSiteBtn.href = websites[currentIndex - 1];
-                        } else {
-                            // Loop to the last website if current is the first
-                            prevSiteBtn.href = websites[websites.length - 1];
-                        }
-
-                        // Find next site that is not the current site
-                        let nextIndex = (currentIndex + 2) % websites.length;
-                        console.log(currentURL);
-                        let nextURL = '';
-                        for (let i = 0; i < websites.length; i++) {
-                            nextURL = websites[nextIndex];
-                            if (nextURL !== currentURL) {
-                                break;
-                            }
-                            nextIndex = (nextIndex + 1) % websites.length;
-                        }
-
-                        // Update next site button
-                        console.log(nextURL);
-
-                        const nextSiteBtn = document.getElementById('nextSiteBtn').querySelector('a');
-                        nextSiteBtn.href = nextURL;
-                    })
-                    .catch(error => console.error('Error fetching website list:', error));
-            }
-
-            // Call the function when the page loads
-            window.onload = fetchWebsiteList;
-        </script>
-
-    </div>
-
-    <div style="width:40px; height:40px; position:absolute; bottom:20%; left:10%; transform: translate(-50%,-50%)">
-        <div id="winamp-container"></div>
-        <script>
-            const Winamp = window.Webamp;
-            // All configuration options are optional.
-            const webamp = new Webamp({
-                // Optional.
-                initialTracks: [
-                    {
-                        metaData: {
-                            artist: "on3ko",
-                            title: "LOSING MY (space)",
-                        },
-                        url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/LOSING MY (space) 5-1-2024.mp3",
-                    },
-                    {
-                        metaData: {
-                            artist: "on3ko",
-                            title: "G37 7H3 FUCK 0NL1N3!!1!!!",
-                        },
-                        url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/GET THE FUCK ONLINE!1!!.mp3",
-                    },
-                    {
-                        metaData: {
-                            artist: "Porter Robinson",
-                            title: "KNOCK YOURSELF OUT XD (on3ko hyperpop bootleg)",
-                        },
-                        url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/KNOCK YOURSELF OUT XD disuko's hyperpop bootleg.mp3",
-                    },
-                    {
-                        metaData: {
-                            artist: "disuko",
-                            title: "ID",
-                        },
-                        url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/90shouse.mp3",
-                    },
-                    {
-                        metaData: {
-                            artist: "disuko",
-                            title: "HOLY F%&KING BINGLE?! WHAT?!",
-                        },
-                        url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/bingle.mp3",
-                    },
-                    {
-                        metaData: {
-                            artist: "disuko",
-                            title: "hotel hallway",
-                        },
-                        url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/hotel hallway.mp3",
-                    },
-                    {
-                        metaData: {
-                            artist: "disuko & Wave Meow",
-                            title: "Lilypad Tea",
-                        },
-                        url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/lilypad.mp3",
-                    },
-                    {
-                        metaData: {
-                            artist: "disuko",
-                            title: "Lush Cave",
-                        },
-                        url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/lushcave.mp3",
-                    },
-                    {
-                        metaData: {
-                            artist: "disuko",
-                            title: "press del to enter startup",
-                        },
-                        url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/press del to enter startup.mp3",
-                    },
-                    {
-                        metaData: {
-                            artist: "disuko",
-                            title: "r5p5rp5",
-                        },
-                        url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/r5p5rp5.mp3",
-                    },
-                    {
-                        metaData: {
-                            artist: "disuko",
-                            title: "TRANCEGENDER",
-                        },
-                        url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/trancegender.mp3",
-                    },
-                    {
-                        metaData: {
-                            artist: "disuko",
-                            title: "You've Got Mail!",
-                        },
-                        url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/youvegotmail.mp3",
+                    // Update previous site button
+                    const prevSiteBtn = document.getElementById('prevSiteBtn').querySelector('a');
+                    if (currentIndex > 0) {
+                        prevSiteBtn.href = websites[currentIndex - 1];
+                    } else {
+                        // Loop to the last website if current is the first
+                        prevSiteBtn.href = websites[websites.length - 1];
                     }
-                ],
-                initialSkin: {
-                    url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/winamp-skins/EAS Purple.wsz"
+
+                    // Find next site that is not the current site
+                    let nextIndex = (currentIndex + 2) % websites.length;
+                    console.log(currentURL);
+                    let nextURL = '';
+                    for (let i = 0; i < websites.length; i++) {
+                        nextURL = websites[nextIndex];
+                        if (nextURL !== currentURL) {
+                            break;
+                        }
+                        nextIndex = (nextIndex + 1) % websites.length;
+                    }
+
+                    // Update next site button
+                    console.log(nextURL);
+
+                    const nextSiteBtn = document.getElementById('nextSiteBtn').querySelector('a');
+                    nextSiteBtn.href = nextURL;
+                })
+                .catch(error => console.error('Error fetching website list:', error));
+        }
+
+        // Call the function when the page loads
+        window.onload = fetchWebsiteList;
+    </script>
+
+</div>
+
+<div style="width:40px; height:40px; position:absolute; bottom:20%; left:10%; transform: translate(-50%,-50%)">
+    <div id="winamp-container"></div>
+    <script>
+        const Winamp = window.Webamp;
+        // All configuration options are optional.
+        const webamp = new Webamp({
+            // Optional.
+            initialTracks: [
+                {
+                    metaData: {
+                        artist: "Snail's House",
+                        title: "Cosmo Funk",
+                    },
+                    url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/collection/cosmofunk.mp3",
                 },
-            });
-            webamp.renderWhenReady(document.getElementById('winamp-container'));
-        </script>
-    </div>
+                {
+                    metaData: {
+                        artist: "Camellia",
+                        title: "U.U.F.O.",
+                    },
+                    url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/collection/uufo.mp3",
+                },
+                {
+                    metaData: {
+                        artist: "Disuko",
+                        title: "Interdimensional Ice Cream Parlor That Features Over 17 Different Flavors",
+                    },
+                    url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/collection/icecreamparlor.mp3",
+                },
+                {
+                    metaData: {
+                        artist: "The Daze",
+                        title: "methomania",
+                    },
+                    url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/collection/meth.mp3",
+                },
+                {
+                    metaData: {
+                        artist: "SOPHIE",
+                        title: "FACESHOPPPING",
+                    },
+                    url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/collection/faceshop.mp3",
+                }
+            ],
+            initialSkin: {
+                url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/winamp-skins/EAS Purple.wsz"
+            },
+        });
+        webamp.renderWhenReady(document.getElementById('winamp-container'));
+    </script>
+</div>
 
 </body>
 
