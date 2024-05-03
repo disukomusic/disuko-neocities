@@ -8,17 +8,11 @@
 html,
 body {
   margin: 0;
-  padding-top: 25px;
-  margin-bottom: 150px;
-
   height: 100%;
   font-family: "tiny", "ＭＳ Ｐゴシック", verdana, sans-serif;
   font-size: 1rem;
   background-image: url("https://i.ibb.co/qgWVr3X/Background.jpg");
-  background-repeat: repeat;
   color: var(--dkest-color);
-  padding: 1px;
-  
 }
 
 * {
@@ -32,8 +26,7 @@ body a {
 }
 #container {
   max-width: 900px;
-  margin: 0 auto;
-  margin-top: 15px;
+  margin: 0px auto 0;
   height: 100%;
 }
 h1,
@@ -80,8 +73,8 @@ ul {
 #wrapper {
   margin: 0 auto;
   max-width: 860px;
-  overflow: auto;
-  padding-bottom: 100px;
+  overflow-y: auto; /* Only vertical scrolling */
+  padding-bottom: 80px;
 }
 .content {
   padding: 10px;
@@ -226,7 +219,6 @@ textarea {
   .wrapper {
     width: 100%;
       margin-bottom: 150px;
-
   }
 }
 
@@ -416,6 +408,8 @@ textarea {
   border: 1px solid var(--dkest-color);
   box-sizing: border-box;
   margin: 0; /* Remove margins */
+  z-index: 11;
+
 }
 
 .top-box {
@@ -457,7 +451,13 @@ textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
+#sticker-container {
+  position: absolute;
+  text-align: center;
+}
 
+#sticker {
+  cursor: move;
+}
