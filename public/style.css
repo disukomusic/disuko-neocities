@@ -11,7 +11,7 @@ body {
   height: 100%;
   font-family: "tiny", "ＭＳ Ｐゴシック", verdana, sans-serif;
   font-size: 1rem;
-  background-image: url("https://i.ibb.co/qgWVr3X/Background.jpg");
+  background-image: url("./images/bg.png");
   color: var(--dkest-color);
 }
 
