@@ -12,6 +12,7 @@ body {
   font-family: "tiny", "ＭＳ Ｐゴシック", verdana, sans-serif;
   font-size: 1rem;
   background-image: url("./images/bg.png");
+  background-size: contain;
   color: var(--dkest-color);
 }
 
