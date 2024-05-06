@@ -11,8 +11,6 @@ body {
   height: 100%;
   font-family: "tiny", "ＭＳ Ｐゴシック", verdana, sans-serif;
   font-size: 1rem;
-  background-image: url("./images/bg.png");
-  background-size: cover;
   color: var(--dkest-color);
 }
 
@@ -64,11 +62,9 @@ img {
 }
 
 ul {
-  font-size: 1rem;
+  font-size: 10px;
   color: var(--accent);
-  list-style-image: url("./images/bullet.gif") ;
 }
-
 
 .title {
   font-size: 35px;

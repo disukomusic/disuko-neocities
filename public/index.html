@@ -70,6 +70,7 @@
                     <button><a href="./">home</a></button>
                     <button><a href="./links.html">links</a></button>
                     <button><a href="./collections.html">collections</a></button>
+                    <button><a href="./site-updates.html">site updates</a></button>
                 </div>
                             
                 <!--top two boxes-->
@@ -88,13 +89,12 @@
                             recently, i've been getting really tired of algorithmically driven web, and wanted to create a site that i actually feel is mine. so, i'll post updates here now and again!
                             <br>
                     
-                            <center>
-                                <a href="https://disuko.123guestbook.com/">sign my guestbook!</a>
-                                <br>
-                                <a href="https://neocities.org/site/disuko">follow my neocities page!</a>
-                                <br>
-                                <a href="https://spacehey.com/disuko">spacehey</a>
-                            </center>
+                                <ul>
+                                    <li><a href="https://disuko.123guestbook.com/">sign my guestbook!</a></li>
+                                    <li><a href="https://neocities.org/site/disuko">follow my neocities page!</a></li>
+                                    <li><a href="https://spacehey.com/disuko">spacehey</a></li>
+                                </ul>
+
                         </div>
                     </div>
                                     
@@ -143,6 +143,7 @@
                 </div>
                             
                 <!--stickers-->
+                <h2 style="position: absolute; top: 350px; right: 100px;">here, have some stickers!</h2>
                 <div id="sticker-container1" class="sticker-container" style="position: absolute; top: 400px; right: 200px; width: 100px;">
                     <div class="sticker"><img src="./images/stickers/dogsticker.png"></div>
                 </div>
@@ -176,6 +177,7 @@
         </div>
         
         <!--winamp player-->
+        <h2 style="position: absolute; top: 500px; left: 10%;  transform: translate(-50%,-50%)">listen to some tunes :3</h2>
         <div style="width:40px; height:40px; position:absolute; bottom:20%; left:10%; transform: translate(-50%,-50%)">
                 <div id="winamp-container"></div>
                 <script>
@@ -330,5 +332,33 @@
                     window.onload = fetchWebsiteList;
                 </script>
             </div>
+    
+        <!-- link sound -->
+        <audio id="link-sound">
+            <source src="https://cdn.jsdelivr.net/gh/disukomusic/cdn/sounds/linksound.wav" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        <script>
+            // JavaScript to play the sound on hover, but only if there is no <img> tag inside <a>
+            document.querySelectorAll('a').forEach(link => {
+                link.addEventListener('mouseenter', playSoundIfNoImage);
+            });
+
+            // JavaScript function to play the sound if there is no <img> tag
+            function playSoundIfNoImage(event) {
+                if (!event.target.querySelector('img')) {
+                    playSound();
+                }
+            }
+
+            // JavaScript function to play the sound
+            function playSound() {
+                var audio = document.getElementById("link-sound");
+                if (!audio.paused) {
+                    audio.currentTime = 0; // Restart the sound if it's already playing
+                }
+                audio.play();
+            }
+        </script>
     </body>
 </html>
