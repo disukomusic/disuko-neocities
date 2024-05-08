@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RED PANDA NETWORK</title>
+    <link href="../RPSWebring.css" media="all" rel="stylesheet" type="text/css">
+</head>
+<body>
+        <div class="webringbox">
+            <div id="prevSiteBtn" class="navbutton"><a href="#"><img src="../images/triangle-right.png"></a></div> 
+            
+            <span id="webringText" class="webringTextContainer">
+                <img class="shiku" src="../images/shiku.png">
+                <h1><a href="https://redpandastudios.net">RED PANDA NETWORK</a></h1>
+            </span> 
+
+            <div id="nextSiteBtn" class="navbutton"><a href="#"><img src="../images/triangle-left.png"></a></div>
+        </div>
+    <script>
+        function fetchWebsiteList() {
+            fetch('https://disuko.neocities.org/RPS_WebRing.txt')
+                .then(response => response.text())
+                .then(data => {
+                    const websites = data.trim().split('\n').map(url => url.trim());
+                    const currentURL = parent.window.location.href.trim();
+                    const currentIndex = websites.indexOf(currentURL);
+
+                    const prevSiteBtn = document.getElementById('prevSiteBtn').querySelector('a');
+                    if (currentIndex > 0) {
+                        prevSiteBtn.href = websites[currentIndex - 1];
+                    } else {
+                        prevSiteBtn.href = websites[websites.length - 1];
+                    }
+
+                    let nextIndex = (currentIndex + 2) % websites.length;
+                    console.log(currentURL);
+                    let nextURL = '';
+                    for (let i = 0; i < websites.length; i++) {
+                        nextURL = websites[nextIndex];
+                        if (nextURL !== currentURL) {
+                            break;
+                        }
+                        nextIndex = (nextIndex + 1) % websites.length;
+                    }
+
+                    console.log(nextURL);
+
+                    const nextSiteBtn = document.getElementById('nextSiteBtn').querySelector('a');
+                    nextSiteBtn.href = nextURL;
+                })
+                .catch(error => console.error('Error fetching website list:', error));
+        }
+
+        window.onload = fetchWebsiteList;
+    </script>
+
+</body>
+</html>

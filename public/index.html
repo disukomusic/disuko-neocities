@@ -324,57 +324,7 @@
 
         <!--footer-->
         <div id="footer">
-                <div class="webringbox">
-                    <div class="content">
-                        <button id="prevSiteBtn"><a href="#">previous site</a></button> part of the <span id="webringText"><a href="https://redpandastudios.net">RPS</a></span> Webring
-        
-                        <button id="nextSiteBtn"><a href="#">next site</a></button>
-                    </div>
-                </div>
-                <script>
-                    // Function to fetch the list of websites
-                    function fetchWebsiteList() {
-                        fetch('https://disuko.neocities.org/RPS_WebRing.txt')
-                            .then(response => response.text())
-                            .then(data => {
-                                const websites = data.trim().split('\n').map(url => url.trim());
-                                const currentURL = window.location.href.trim();
-                                const currentIndex = websites.indexOf(currentURL);
-        
-                                // Update previous site button
-                                const prevSiteBtn = document.getElementById('prevSiteBtn').querySelector('a');
-                                if (currentIndex > 0) {
-                                    prevSiteBtn.href = websites[currentIndex - 1];
-                                } else {
-                                    // Loop to the last website if current is the first
-                                    prevSiteBtn.href = websites[websites.length - 1];
-                                }
-        
-                                // Find next site that is not the current site
-                                let nextIndex = (currentIndex + 2) % websites.length;
-                                console.log(currentURL);
-                                let nextURL = '';
-                                for (let i = 0; i < websites.length; i++) {
-                                    nextURL = websites[nextIndex];
-                                    if (nextURL !== currentURL) {
-                                        break;
-                                    }
-                                    nextIndex = (nextIndex + 1) % websites.length;
-                                }
-        
-                                // Update next site button
-                                console.log(nextURL);
-        
-                                const nextSiteBtn = document.getElementById('nextSiteBtn').querySelector('a');
-                                nextSiteBtn.href = nextURL;
-                            })
-                            .catch(error => console.error('Error fetching website list:', error));
-                    }
-        
-                    // Call the function when the page loads
-                    window.onload = fetchWebsiteList;
-                </script>
-            </div>
+        </div>
     
         <!-- link sound -->
         <audio id="link-sound">
