@@ -8,65 +8,51 @@
     <link rel="icon" type="image/png" href="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2F771162480e81310b4b949dc6d00360b2.png&w=48&q=75&f=webp" />
 </head>
 <body class="scroll">
-<div id="container">
-    <img src="./images/webcorner.png" class="title" />
-    <div>
-        <div class="nav-box">
-            <button> <a href="./">home</a></button>
-            <button><a href="./links.html">links</a></button>
-            <button><a href="./collections.html">collections</a></button>
-            <button><a href="./site-updates.html">site updates</a></button>
-
-        </div>
-        <div id="wrapper">
-            <div class="full-width-box">
-                <div class="section-title">site updates</div>
-                <div class="content">
-                    <h2>5-8-2024</h2>
-                    <ul>
-                        <li>guestbook ticker on the bottom of the homepage!</li>
-                        <li>also, lots of updates over on <a href="https:on3ko.lol">on3ko.lol</a>!!</li>
-
-                    </ul>
-                    
-                    <h2>5-5-2024</h2>
-                    <ul>
-                        <li>cute little bullet points!</li>
-                        <li>labels for homepage fun stuff (music player and stickers)</li>
-                        <li>added link hover sound</li>
-                        <li>updated collections page, trying out iframe approach</li>
-                        <li>added some more sites to my links page</li>
-
-                    </ul>
+    <div id="container">
+        <img src="./images/webcorner.png" class="title" />
+        <div>
+            <div class="nav-box">
+                <button> <a href="./">home</a></button>
+                <button><a href="./links.html">links</a></button>
+                <button><a href="./collections.html">collections</a></button>
+                <button><a href="./site-updates.html">site updates</a></button>
+    
+            </div>
+            <div id="wrapper">
+                <div class="full-width-box">
+                    <div class="section-title">site updates</div>
+                    <div class="content">
+                        <h2>5-8-2024</h2>
+                        <ul>
+                            <li>new link sound that's more pleasant</li>
+                            <li>88x31 button and chatbox on homepage!!!</li>
+                            <li>also, lots of updates over on <a href="https:on3ko.lol">on3ko.lol</a>!!</li>
+    
+                        </ul>
+                        
+                        <h2>5-5-2024</h2>
+                        <ul>
+                            <li>cute little bullet points!</li>
+                            <li>labels for homepage fun stuff (music player and stickers)</li>
+                            <li>added link hover sound</li>
+                            <li>updated collections page, trying out iframe approach</li>
+                            <li>added some more sites to my links page</li>
+    
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-<div id="footer">
-
-</div>
+    
+    <div id="footer">
+    
+    </div>
     <!-- link sound -->
     <audio id="link-sound">
-        <source src="https://cdn.jsdelivr.net/gh/disukomusic/cdn/sounds/linksound.wav" type="audio/wav">
+        <source src="https://cdn.jsdelivr.net/gh/disukomusic/cdn/sounds/linkhover.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
-    
-    <script>
-        // JavaScript to play the sound on hover
-        document.querySelectorAll('a').forEach(link => {
-            link.addEventListener('mouseenter', playSound);
-        });
-    
-        // JavaScript function to play the sound
-        function playSound() {
-            let audio = document.getElementById("link-sound");
-            if (!audio.paused) {
-                audio.currentTime = 0; // Restart the sound if it's already playing
-            }
-            audio.play();
-        }
-    </script>
+    <script src="linkSound.js"></script>
 </body>
 </html>

@@ -150,26 +150,10 @@
 
 <!-- link sound -->
 <audio id="link-sound">
-    <source src="https://cdn.jsdelivr.net/gh/disukomusic/cdn/sounds/linksound.wav" type="audio/wav">
+    <source src="https://cdn.jsdelivr.net/gh/disukomusic/cdn/sounds/linkhover.mp3" type="audio/mp3">
     Your browser does not support the audio element.
 </audio>
-
-<script>
-    // JavaScript to play the sound on hover
-    document.querySelectorAll('a').forEach(link => {
-        link.addEventListener('mouseenter', playSound);
-    });
-
-    // JavaScript function to play the sound
-    function playSound() {
-        let audio = document.getElementById("link-sound");
-        if (!audio.paused) {
-            audio.currentTime = 0; // Restart the sound if it's already playing
-        }
-        audio.play();
-    }
-</script>
-
+<script src="linkSound.js"></script>
 </body>
 
 </html>

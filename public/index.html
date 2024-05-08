@@ -124,7 +124,7 @@
                         </div>
                         <div class="content">
                             <strong>DISUKO DATING SIMULATOR</strong>
-                            <br><br> me and my friend <a href="voidreddev.neocities.org">red</a> are making a dating sim parody game! landing page <a href="https://redpandastudios.net/date">here</a>
+                            <br><br> me and my friend <a href="voidreddev.neocities.org" class="hoverLink">red</a> are making a dating sim parody game! landing page <a href="https://redpandastudios.net/date">here</a>
                             <br><img src="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2F095268a4ccd02d29fd5adb83589647cc.png&w=640&q=75&f=webp" width="100%"/>
                         </div>
                     </div>
@@ -141,7 +141,37 @@
                         </center>
                     </div>
                 </div>
+                
+                <!--third row boxes-->
+                <div id="two-boxes">
+
+                    <!--chatbox-->
+                    <div class="box-one">
+                        <div class="section-title">
+                            panda cafe
+                        </div>
+                        <div class="content">
+                           <iframe src="https://my.cbox.ws/pandacafe" width = 100%, height="256px"></iframe>
+                        </div>
+                    </div>
+                    
+                    <!--buttons-->
+                    <div class="box-one">
+                        <div class="section-title">
+                            buttons
+                        </div>
+                        <div class="content">
+                            <p>feel free to hotlink my button!</p>
+                            <a href="https://disuko.neocities.org"><img src="./images/buttons/disuko-button.gif"/></a><br>
                             
+                            <textarea rows="6" cols="50"><a href="https://disuko.neocities.org"><img src="https://disuko.neocities.org/images/buttons/disuko-button.gif"/></a></textarea>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
                 <!--stickers-->
                 <h2 style="position: absolute; top: 350px; right: 100px;">here, have some stickers!</h2>
                 <div id="sticker-container1" class="sticker-container" style="position: absolute; top: 400px; right: 200px; width: 100px;">
@@ -170,8 +200,7 @@
                         </div>
                     </div>
                     <center>
-                        <iframe src="http://www./scroller.php?id=" height="18" width="" frameborder="no" scrolling="no"></iframe>
-                        <script src="//counter.websiteout.com/js/30/0/726/0" type="text/javascript"></script>
+                        <script src="//counter.websiteout.com/js/30/0/726/0" type="text/javascript" ></script>
                     </center>
                 </div>
             </div>
@@ -336,30 +365,9 @@
     
         <!-- link sound -->
         <audio id="link-sound">
-            <source src="https://cdn.jsdelivr.net/gh/disukomusic/cdn/sounds/linksound.wav" type="audio/wav">
+            <source src="https://cdn.jsdelivr.net/gh/disukomusic/cdn/sounds/linkhover.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
-        <script>
-            // JavaScript to play the sound on hover, but only if there is no <img> tag inside <a>
-            document.querySelectorAll('a').forEach(link => {
-                link.addEventListener('mouseenter', playSoundIfNoImage);
-            });
-
-            // JavaScript function to play the sound if there is no <img> tag
-            function playSoundIfNoImage(event) {
-                if (!event.target.querySelector('img')) {
-                    playSound();
-                }
-            }
-
-            // JavaScript function to play the sound
-            function playSound() {
-                var audio = document.getElementById("link-sound");
-                if (!audio.paused) {
-                    audio.currentTime = 0; // Restart the sound if it's already playing
-                }
-                audio.play();
-            }
-        </script>
+        <script src="linkSound.js"></script>
     </body>
 </html>

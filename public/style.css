@@ -24,11 +24,13 @@ body {
 body a {
   color: var(--dk-color);
   font-weight: bold;
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
 }
 
 body a:hover {
   color: var(--accent);
   font-weight: bold;
+  transform: translateY(-2px); /* Move link up 2 pixels on hover */
 }
 
 #container {
@@ -87,6 +89,12 @@ ul {
 .content {
   padding: 10px;
 }
+
+.hoverLink{
+  transform: translateY(-2px)!important;
+  transition: ease-in-out;
+}
+
 #two-boxes {
   display: flex;
   flex-wrap: wrap;
@@ -155,6 +163,7 @@ button a {
 button a:hover {
   color: var(--dkest-color);
   font-weight: bold;
+  
 }
 
 @keyframes wave {
@@ -489,3 +498,4 @@ textarea {
 #sticker {
   cursor: move;
 }
+
