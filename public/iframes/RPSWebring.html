@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>RED PANDA NETWORK</title>
-    <link href="https://disuko.neocities.org/RPSWebring.css" media="all" rel="stylesheet" type="text/css">
+    <link href="../RPSWebring.css" media="all" rel="stylesheet" type="text/css">
 </head>
 <body>
         <div class="webringbox">
             <div id="prevSiteBtn" class="navbutton"><a href="#" target="_parent"><img src="../images/triangle-right.png"></a></div> 
             
             <span id="webringText" class="webringTextContainer">
-                <img class="shiku" src="../images/shiku.png">
+                <img class="shiku" src="../images/shiku.png" width="90%">
                 <h1><a href="https://redpandastudios.net">RED PANDA NETWORK</a></h1>
             </span> 
 
             <div id="nextSiteBtn" class="navbutton"><a href="#" target="_parent"><img src="../images/triangle-left.png"></a></div>
         </div>
-    <script>
+        <script>
         function fetchWebsiteList() {
             fetch('https://disuko.neocities.org/RPS_WebRing.txt')
                 .then(response => response.text())
