@@ -12,11 +12,14 @@
             // PREV and NEXT get replaced with neighboring site urls
             stylesheet: "https://disuko.neocities.org/RPSWebring.css",
             widget: `
-    <div id="my-webring" style="display: flex; gap: 8px">
-      <a href="PREV" class="navbutton"><img src="https://disuko.neocities.org/images/triangle-right.png" height="32px"></a>
-      <div><img src="https://disuko.neocities.org/images/shiku.png" class="shiku" height="32px"></div>
-      <a href="NEXT" class="navbutton"><img src="https://disuko.neocities.org/images/triangle-left.png" height="32px"></a>
-    </div>
+    <center>
+        <div id="my-webring" style="display: flex; gap: 8px">
+            <a href="PREV" class="navbutton"><img src="https://disuko.neocities.org/images/triangle-right.png" height="32px"></a>
+            <div><img src="https://disuko.neocities.org/images/shiku.png" class="shiku" height="64px"></div>
+            <a href="NEXT" class="navbutton"><img src="https://disuko.neocities.org/images/triangle-left.png" height="32px"></a>
+        </div>
+    </center>
+
   `,
 
             error: "<div>This site isn't part of the webring yet.</div>",
