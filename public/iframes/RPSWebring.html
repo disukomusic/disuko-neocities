@@ -5,52 +5,40 @@
     <title>RED PANDA NETWORK</title>
     <link href="../RPSWebring.css" media="all" rel="stylesheet" type="text/css">
     <script>
-        const websites = [
-            // Paste the URLs here
-            "https://voidreddev.neocities.org",
-            "https://disuko.neocities.org",
-            "https://on3ko.lol",
-            "https://midnightsyntax.neocities.org"
+        // sitelist (newest to oldest)
+        // strip the https:// off
+        RPSWebringSites = [
+            "voidreddev.neocities.org",
+            "disuko.neocities.org",
+            "on3ko.lol",
+            "midnightsyntax.neocities.org"
         ];
 
-        // Get the current URL of the parent window
-        const parentURL = window.parent.location.href;
-
-        // Find the index of the current website in the list
-        const currentIndex = websites.indexOf(parentURL);
-
-        // Function to get the URL of the previous site
-        function getPrevSite() {
-            const prevIndex = (currentIndex - 1 + websites.length) % websites.length; // Calculate previous index
-            return websites[prevIndex];
+        // all of the actual code
+        RPSWebringIdx = location.href.startsWith("file://") ? 0 : RPSWebringSites.findIndex(url => location.href.startsWith("https://" + url));
+        if (RPSWebringIdx == -1) document.currentScript.outerHTML = `<div>
+          <a href="https://disuko.neocities.org" target="_top"><img src="https://disuko.neocities.org/images/shiku.png"></a>
+          <div style="font-size: 0.75em; text-align: center">This site isn't part of the RED PANDA NETWORK webring yet.</div>
+        </div>`;
+        else {
+            let widget = `
+            <div class="webringbox">
+                <div id="prevSiteBtn" class="navbutton"><a href="https://${RPSWebringSites[(RPSWebringIdx - 1 + RPSWebringSites.length) % RPSWebringSites.length]}" target="_top"><img src="../images/triangle-right.png" width="16px"></a></div> 
+                <span id="webringText" class="webringTextContainer">
+                    <a href="https://redpandastudios.net" target="_parent">
+                        <img class="shiku" src="../images/shiku.png" width="64px">
+                    </a>
+                </span> 
+                <div id="nextSiteBtn" class="navbutton"><a href="https://${RPSWebringSites[(RPSWebringIdx + 1) % RPSWebringSites.length]}" target="_top"><img src="../images/triangle-left.png" width="16px"></a></div>
+            </div>
+          `;
+            if (document.currentScript.dataset.widget === "nb") widget = widget.replaceAll("/widget/trans/", "/widget/nb/");
+            document.currentScript.outerHTML = widget;
         }
-
-        // Function to get the URL of the next site
-        function getNextSite() {
-            const nextIndex = (currentIndex + 1) % websites.length; // Calculate next index
-            return websites[nextIndex];
-        }
-
-        // Update href attributes of the previous and next site links
-        document.getElementById('prevSiteBtn').href = getPrevSite();
-        document.getElementById('nextSiteBtn').href = getNextSite();
+        delete RPSWebringSites;
+        delete RPSWebringIdx;
     </script>
-    
 </head>
 <body>
-        <div class="webringbox">
-            <div id="prevSiteBtn" class="navbutton"><a href="#" target="_parent"><img src="../images/triangle-right.png" width="16px"></a></div> 
-            
-            <span id="webringText" class="webringTextContainer">
-                <a href="https://redpandastudios.net" target="_parent">
-                    <img class="shiku" src="../images/shiku.png" width="64px">
-                </a>
-            </span> 
-
-            <div id="nextSiteBtn" class="navbutton"><a href="#" target="_parent"><img src="../images/triangle-left.png" width="16px"></a></div>
-        </div>
-
-        
-
 </body>
 </html>
