@@ -1,12 +1,4 @@
-﻿.webringbox {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    text-align: center; 
-    gap: 10px
-}
-
-.navbutton{
+﻿.navbutton{
     transform: unset;
     transition: ease-in-out 0.1s ;
 
