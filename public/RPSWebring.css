@@ -8,19 +8,6 @@
     filter: brightness(50%) saturate(600%);
 }
 
-h1 {
-    font-family: "Arial Black", sans-serif;
-    font-weight: bold;
-    color: #2d241a;
-    font-size: 24px;
-}
-
-a {
-    text-decoration: none!important;
-    color: #2d241a;
-    font-size: 16px;
-}
-
 .shiku{
     transform: unset;
     transition: ease-in-out 0.1s ;
