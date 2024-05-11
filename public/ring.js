@@ -1,6 +1,5 @@
 ﻿
-
-        // webstring by june @ webcatz.neocities.org
+// webstring by june @ webcatz.neocities.org
 
 // webring settings
         webring = {
@@ -11,7 +10,7 @@
                 "https://midnightsyntax.neocities.org",
             ],
             // PREV and NEXT get replaced with neighboring site urls
-            stylesheet: "https://your_site_here.neocities.org/folder/widget.css",
+            stylesheet: "https://disuko.neocities.org/RPSWebring.css",
             widget: `
     <div id="my-webring" style="display: flex; gap: 8px">
       <a href="PREV" class="navbutton"><img src="https://disuko.neocities.org/images/triangle-right.png" width="32px"></a>
@@ -31,7 +30,7 @@
     webring.index = location.href.startsWith("file://") ? 0 : webring.sites.findIndex(url => location.href.startsWith(url));
     if (webring.index == -1) document.currentScript.outerHTML = webring.error;
     else {
-        let sheet = document.createElement("https://disuko.neocities.org/RPSWebring.css");
+        let sheet = document.createElement("link");
         sheet.rel = "stylesheet", sheet.href = webring.stylesheet;
         document.head.appendChild(sheet);
         webring.widget = webring.widget.replace("PREV", webring.sites.at(webring.index - 1));
