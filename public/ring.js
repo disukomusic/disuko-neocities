@@ -8,7 +8,7 @@
                 "https://voidreddev.neocities.org",
                 "https://on3ko.lol",
                 "https://midnightsyntax.neocities.org",
-                "https://redpandastudios.net",
+                "https://www.redpandastudios.net",
             ],
             // PREV and NEXT get replaced with neighboring site urls
             stylesheet: "https://disuko.neocities.org/RPSWebring.css",
@@ -23,11 +23,8 @@
 
   `,
 
-            error: "            <a href=\"https://redpandastudios.net\" target=\"_parent\"><img src=\"https://disuko.neocities.org/images/shiku.png\" class=\"shiku\" height=\"100px\"></a>\n" +
-                "<div>This site isn't part of the webring yet.</div>" +
-                "" +
-                "",
-
+            error: "<a href=\"https://redpandastudios.net\" target=\"_parent\"><img src=\"https://disuko.neocities.org/images/shiku.png\" class=\"shiku\" height=\"100px\"></a>\n" +
+                "<div>This site isn't part of the webring yet.</div>"
         };
 
 
