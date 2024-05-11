@@ -13,10 +13,9 @@
             stylesheet: "https://disuko.neocities.org/RPSWebring.css",
             widget: `
     <div id="my-webring" style="display: flex; gap: 8px">
-      <a href="PREV" class="navbutton"><img src="https://disuko.neocities.org/images/triangle-right.png" width="32px"></a>
-      <div><img src="https://disuko.neocities.org/images/shiku.png" class="shiku" width="32px"></div>
-      <a href="RANDOM" class="navbutton">random</a>
-      <a href="NEXT" class="navbutton"><img src="https://disuko.neocities.org/images/triangle-left.png" width="32px"></a>
+      <a href="PREV" class="navbutton"><img src="https://disuko.neocities.org/images/triangle-right.png" height="32px"></a>
+      <div><img src="https://disuko.neocities.org/images/shiku.png" class="shiku" height="32px"></div>
+      <a href="NEXT" class="navbutton"><img src="https://disuko.neocities.org/images/triangle-left.png" height="32px"></a>
     </div>
   `,
 
@@ -35,7 +34,6 @@
         document.head.appendChild(sheet);
         webring.widget = webring.widget.replace("PREV", webring.sites.at(webring.index - 1));
         webring.widget = webring.widget.replace("NEXT", webring.sites[(webring.index + 1) % webring.sites.length]);
-        webring.widget = webring.widget.replace("RANDOM", webring.sites[Math.floor(Math.random() * webring.sites.length)]);
         document.currentScript.outerHTML = webring.widget;
     }
     delete webring;
