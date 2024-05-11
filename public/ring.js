@@ -13,7 +13,7 @@
             stylesheet: "https://disuko.neocities.org/RPSWebring.css",
             widget: `
     <center>
-        <div id="my-webring" style="display: flex; gap: 8px; align-items: center; align-content: center; align-self: center; justify-self: center">
+        <div id="my-webring" style="display: flex; gap: 8px; align-items: center; align-content: center; align-self: center; justify-self: center; max-width: max-content;">
             <a href="PREV" class="navbutton"><img src="https://disuko.neocities.org/images/triangle-right.png" height="16px"></a>
             <div><img src="https://disuko.neocities.org/images/shiku.png" class="shiku" height="128px"></div>
             <a href="NEXT" class="navbutton"><img src="https://disuko.neocities.org/images/triangle-left.png" height="16px"></a>
