@@ -5,37 +5,35 @@
     <title>RED PANDA NETWORK</title>
     <link href="../RPSWebring.css" media="all" rel="stylesheet" type="text/css">
     <script>
+        const websites = [
+            // Paste the URLs here
+            "https://example1.com",
+            "https://example2.com",
+            "https://example3.com",
+            // Add more URLs as needed
+        ];
+
         // Get the current URL of the parent window
         const parentURL = window.parent.location.href;
 
-        // Fetch the list of websites from the provided URL
-        fetch('https://disuko.neocities.org/RPS_WebRing.txt')
-            .then(response => response.text())
-            .then(data => {
-                const websites = data.split('\n').filter(website => website.trim() !== ''); // Split the data into an array of website URLs
+        // Find the index of the current website in the list
+        const currentIndex = websites.indexOf(parentURL);
 
-                // Find the index of the current website in the list
-                const currentIndex = websites.indexOf(parentURL);
+        // Function to get the URL of the previous site
+        function getPrevSite() {
+            const prevIndex = (currentIndex - 1 + websites.length) % websites.length; // Calculate previous index
+            return websites[prevIndex];
+        }
 
-                // Function to get the URL of the previous site
-                function getPrevSite() {
-                    const prevIndex = (currentIndex - 1 + websites.length) % websites.length; // Calculate previous index
-                    return websites[prevIndex];
-                }
+        // Function to get the URL of the next site
+        function getNextSite() {
+            const nextIndex = (currentIndex + 1) % websites.length; // Calculate next index
+            return websites[nextIndex];
+        }
 
-                // Function to get the URL of the next site
-                function getNextSite() {
-                    const nextIndex = (currentIndex + 1) % websites.length; // Calculate next index
-                    return websites[nextIndex];
-                }
-
-                // Update href attributes of the previous and next site links
-                document.getElementById('prevSiteBtn').href = getPrevSite();
-                document.getElementById('nextSiteBtn').href = getNextSite();
-            })
-            .catch(error => {
-                console.error('Error fetching websites:', error);
-            });
+        // Update href attributes of the previous and next site links
+        document.getElementById('prevSiteBtn').href = getPrevSite();
+        document.getElementById('nextSiteBtn').href = getNextSite();
     </script>
     
 </head>
