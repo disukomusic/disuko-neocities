@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>☆*:.｡.disuko's web corner｡.:*☆</title>
+    <link href="style.css" media="all" rel="stylesheet" type="text/css">
+    <link href="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2F771162480e81310b4b949dc6d00360b2.png&w=48&q=75&f=webp" rel="icon" type="image/png" />
+    <script>
+        var titles = ["☆*:.｡.o(≧▽≦)o.｡.:*☆", "☆*:.｡.disuko's postbox｡.:*☆"];
+        var titleIndex = 0;
+        function toggleTitle() {
+            document.title = titles[titleIndex];
+            titleIndex = (titleIndex + 1) % titles.length;
+        }
+
+        setInterval(toggleTitle, 1000);
+    </script>
+    <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
+    <script src="viewable-image.js"></script>
+
+    <style>
+        .slap {
+            display: inline-block;
+            transform: rotate(calc(-10deg + (20deg * var(--random-rotation))));
+            transition: transform 0.2s ease;
+            width: 200px;
+        }
+        .slap:hover {
+            width: 210px;
+            transition: ease-in-out 0.2s;
+            transform: rotate(0deg); !important
+        }
+
+        .postbox {
+            gap: 0px;
+            margin: 0; /* Remove any margin */
+            padding: 0; /* Remove any padding */
+
+        }
+        .postbox-middle{
+            background-image: url("./images/postbox-middle.png") ;
+            background-size: contain;
+            background-position: center;
+            background-repeat: repeat-y;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+    </style>
+</head>
+
+<body>
+<div id="container">
+
+    <img class="title" src="./images/webcorner.png" />
+
+    <div id="wrapper">
+        <div class="snowflakes">
+            <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
+            <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
+            <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
+            <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
+            <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
+            <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
+            <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
+            <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
+        </div>
+        <div class="nav-box">
+            <button><a href="./">home</a></button>
+            <button><a href="./links.html">links</a></button>
+            <button><a href="./collections.html">collections</a></button>
+            <button><a href="./site-updates.html">site updates</a></button>
+        </div>
+        
+        <div class="full-width-box">
+            <div class="section-title">postbox</div>
+            <div class="content">
+                <p>check out my postbox slaps! some of these are good and some of them aren't but oh well</p>
+            </div>
+        </div>
+
+        <div class="postbox">
+            <img src="./images/postbox-top.png" width="100%">
+            <div class="postbox-middle">
+                <img src="./images/slaps/Slap (1).png" class="slap" style="--random-rotation: 0.5;">
+                <img src="./images/slaps/Slap (2).png" class="slap" style="--random-rotation: -0.2;">
+                <img src="./images/slaps/Slap (3).png" class="slap" style="--random-rotation: 0.8;">
+                <img src="./images/slaps/Slap (4).png" class="slap" style="--random-rotation: -0.4;">
+                <img src="./images/slaps/Slap (5).png" class="slap" style="--random-rotation: 0.6;">
+                <img src="./images/slaps/Slap (6).png" class="slap" style="--random-rotation: -0.1;">
+                <img src="./images/slaps/Slap (7).png" class="slap" style="--random-rotation: 0.3;">
+                <img src="./images/slaps/Slap (8).png" class="slap" style="--random-rotation: -0.5;">
+                <img src="./images/slaps/Slap (9).png" class="slap" style="--random-rotation: 0.7;">
+                <img src="./images/slaps/Slap (10).png" class="slap" style="--random-rotation: -0.3;">
+                <img src="./images/slaps/Slap (11).png" class="slap" style="--random-rotation: 0.2;">
+                <img src="./images/slaps/Slap (12).png" class="slap" style="--random-rotation: -0.6;">
+                <img src="./images/slaps/Slap (13).png" class="slap" style="--random-rotation: 0.4;">
+            </div>
+            <img src="./images/postbox-bottom.png" width="100%">
+        </div>
+    </div>
+</div>  
+    
+<!-- link sound -->
+<audio id="link-sound">
+    <source src="https://cdn.jsdelivr.net/gh/disukomusic/cdn/sounds/linkhover.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+<script src="linkSound.js"></script>
+</body>
+
+</html>

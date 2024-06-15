@@ -45,10 +45,24 @@
             setInterval(toggleTitle, 1000);
         </script>
         <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
+        
+        <style>
+            .postbox{
+                position: fixed;
+                right:10px;
+                bottom:10px;
+            }
+
+            .postbox:hover{
+                transform: scale(105%);
+            }
+        </style>
     </head>
     
     <body>
-        <div id="container">
+        <a href="./postbox.html"><img src="https://web.archive.org/web/20091027141333/http://www.geocities.com/cheros_2000/mailbox.gif" class="postbox"></a>
+
+    <div id="container">
             <!--title-->
             <img class="title" src="./images/webcorner.png"/>
             <div id="wrapper">
