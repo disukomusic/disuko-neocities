@@ -540,8 +540,7 @@ textarea {
 .webrings{
   background-color: var(--lt-color);
   border: 1px solid var(--dk-color);
-  padding-left:40px;
-  padding-right:40px;
+  padding: 10px 40px;
   width:35vw;
   display: flex;
   overflow: auto;
