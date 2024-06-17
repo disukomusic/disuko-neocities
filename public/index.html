@@ -1,362 +1,78 @@
 <!DOCTYPE html>
 <html>
-<!-- GET OUT OF MY HTML!!!! -->
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>☆*:.｡.disuko's web corner｡.:*☆</title>
+    <link href="style.css" media="all" rel="stylesheet" type="text/css">
+    <link href="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2F771162480e81310b4b949dc6d00360b2.png&w=48&q=75&f=webp" rel="icon" type="image/png" />
+    <script>
+        var titles = ["☆*:.｡.o(≧▽≦)o.｡.:*☆", "☆*:.｡.disuko's web corner｡.:*☆"];
+        var titleIndex = 0;
+        function toggleTitle() {
+            document.title = titles[titleIndex];
+            titleIndex = (titleIndex + 1) % titles.length;
+        }
 
-<!----------██████████----------------████████------------>
-<!--------██░░░░░░░░░░██------------██░░░░░░░░██---------->
-<!------██░░░░░░░░░░░░░░██--------██░░░░░░░░░░░░██-------->
-<!----██░░████░░░░░░░░░░██████████████░░░░░░░░██░░██------>
-<!----██------██░░░░░░░░░░░░░░░░░░░░░░░░░░░░██--░░██------>
-<!----██------██░░------░░░░░░░░░░░░░░░░░░░░██--░░██------>
-<!----██░░--░░------------░░░░░░░░░░░░░░░░░░░░██░░██------>
-<!------████------------------░░░░░░░░░░░░░░░░████-------->
-<!--------██------██████------------░░░░██████--██-------->
-<!--------██----████----██------------██----██████-------->
-<!--------██----████----██------------██----████░░██------>
-<!------██------██████████------------██████████--██------>
-<!----████████░░--██████--------░░██----██████--░░██████-->
-<!------██░░--------------------------------------██------>
-<!------██████░░------------------------------░░██████---->
-<!----████----------------██----██----██--------░░██------>
-<!------██░░░░--------------████--████----------██-------->
-<!------██░░░░░░░░----------------------------████-------->
-<!----████░░░░--------██----------------██----░░██-------->
-<!--██░░██░░--------░░--██------------██--------██-------->
-<!----████--------██░░░░██------------██----██--██-------->
-<!------████--------████----------------████--██---------->
-<!--------████░░██----░░░░░░░░------------░░██------------>
-<!--------██░░░░░░██████████████████████░░░░░░██---------->
-<!----------██████----------------------██████------------>
+        setInterval(toggleTitle, 1000);
+    </script>
+    <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>☆*:.｡.disuko's web corner｡.:*☆</title>
-        <link href="style.css" media="all" rel="stylesheet" type="text/css">
-        <link href="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2F771162480e81310b4b949dc6d00360b2.png&w=48&q=75&f=webp" rel="icon" type="image/png" />
-        <script>
-            var titles = ["☆*:.｡.o(≧▽≦)o.｡.:*☆", "☆*:.｡.disuko's web corner｡.:*☆"];
-            var titleIndex = 0;
-            function toggleTitle() {
-                document.title = titles[titleIndex];
-                titleIndex = (titleIndex + 1) % titles.length;
-            }
-        
-            setInterval(toggleTitle, 1000);
-        </script>
-        <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
-        
-        <style>
-            .postbox{
-                position: fixed;
-                right:10px;
-                bottom:10px;
-            }
+</head>
 
-            .postbox:hover{
-                transform: scale(105%);
-            }
-        </style>
-    </head>
-    
-    <body>
-        <a href="./postbox.html"><img src="https://web.archive.org/web/20091027141333/http://www.geocities.com/cheros_2000/mailbox.gif" class="postbox"></a>
+<body>
 
-    <div id="container">
-            <!--title-->
-            <img class="title" src="./images/webcorner.png"/>
-            <div id="wrapper">
-                            
-                <!--snowflakes-->
-                <div class="snowflakes">
-                    <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
-                    <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
-                    <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
-                    <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
-                    <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
-                    <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
-                    <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
-                    <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
-                </div>
-                
-                <!--navigation-->
-                <div class="nav-box">
-                    <button><a href="./">home</a></button>
-                    <button><a href="./links.html">links</a></button>
-                    <button><a href="./collections.html">collections</a></button>
-                    <button><a href="./greenhouse.html">greenhouse</a></button>
-                    <button><a href="./site-updates.html">site updates</a></button>
-                </div>
-                            
-                <!--top two boxes-->
-                <div id="two-boxes">
-                                    
-                    <!--greeting-->
-                    <div class="box-one">
-                        <div class="section-title">
-                            hi there!
-                        </div>
-                        
-                        <div class="content">
-                            <center>
-                                <img src="https://99gifshop.neocities.org/items/4/mittel.gif" width="10%" />
-                            </center>
-                            recently, i've been getting really tired of algorithmically driven web, and wanted to create a site that i actually feel is mine. so, i'll post updates here now and again!
-                            <br>
-                    
-                                <ul>
-                                    <li><a href="https://disuko.atabook.org">sign my guestbook!</a></li>
-                                    <li><a href="https://neocities.org/site/disuko">follow my neocities page!</a></li>
-                                    <li><a href="https://spacehey.com/disuko">spacehey</a></li>
-                                </ul>
+<!--snowflakes-->
+<div class="snowflakes">
+    <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
+    <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
+    <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
+    <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
+    <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
+    <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
+    <div class="snowflake"><img src="https://i5.glitter-graphics.org/pub/638/638145bltz6zqhdo.gif" /></div>
+    <div class="snowflake"><img src="https://i.ibb.co/q92vdYH/IMG-5494.gif" /></div>
+</div>
 
-                        </div>
-                    </div>
-                                    
-                    <!--profile-->
-                    <div class="box-one">
-                        <div class="section-title">
-                            profile
-                        </div>
-    
-                        <div class="content">
-                            <strong>name: </strong>angelo/disuko
-                            <br><strong>pronouns: </strong> any!
-                            <br><strong>age: </strong> 20
-                            <br><strong>hobbies: </strong> <a href="https://disuko.gay/music">music production</a>, 3d art, playing piano, <a href="https://disukoretrogames.etsy.com">creating stickers,</a> graphic design
-                            <br><strong>fav music: </strong> jcore, rhythm game soundtracks, jazz, kawaii future bass
-                            <img src="https://i.imgur.com/NGPqwMq.gif" width="100%">
-                            <br><strong>current status:</strong> 
-                            <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=disuko" defer></script>
-                            <img src="https://i.imgur.com/NGPqwMq.gif" width="100%">
-
-                        </div>
-                    </div>
-                </div>
-                            
-                <!--second row boxes-->
-                <div id="two-boxes">
-                                
-                    <!--current project-->
-                    <div class="box-one">
-                        <div class="section-title">
-                            current project
-                        </div>
-                        <div class="content">
-                            <strong>DISUKO DATING SIMULATOR</strong>
-                            <br><br> me and my friend <a href="voidreddev.neocities.org" class="hoverLink">red</a> are making a dating sim parody game! landing page <a href="https://redpandastudios.net/date">here</a>
-                            <br><img src="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2F095268a4ccd02d29fd5adb83589647cc.png&w=640&q=75&f=webp" width="100%"/>
-                        </div>
-                    </div>
-
-                    <!--buttons-->
-                    <div class="box-one">
-                        <div class="section-title">
-                            buttons
-                        </div>
-                        <div class="content">
-                            <center>
-                                feel free to hotlink my button!<br>
-                                <a href="https://disuko.neocities.org"><img src="./images/buttons/disuko-button.gif"/></a><br>
-                                    <textarea rows="3" cols="40"><a href="https://disuko.neocities.org"><img src="https://disuko.neocities.org/images/buttons/disuko-button.gif"/></a></textarea>
-    
-                                <p>other sites i've worked on</p>
-                                
-                                <a href="https://rat.pics"><img src="https://rat.pics/RatPicsBadge.gif" /></a>
-                                    <textarea rows="3" cols="40"><a href="https://rat.pics"><img src="https://rat.pics/RatPicsBadge.gif" /></a></textarea>
-                                <a href="https://on3ko.lol" ><img src="https://on3ko.lol/Assets/Images/on3kobutton.gif" alt="on3ko button!!!!"></a>
-                                    <textarea rows="3" cols="40"><a href="https://on3ko.lol" ><img src="https://on3ko.lol/Assets/Images/on3kobutton.gif" alt="on3ko button!!!!"></a></textarea>
-                                <a href="https://funnydog.online/"><img src="https://cdn.jsdelivr.net/gh/disukomusic/cdn/88x31s/funnydog.png"></a>
-                                    <textarea rows="3" cols="40"><a href="https://funnydog.online/"><img src="https://cdn.jsdelivr.net/gh/disukomusic/cdn/88x31s/funnydog.png"></a></textarea>
-                            </center>
-                        </div>
-                    </div> 
-                    
-                    
-                </div>
-                
-                <!--third row boxes-->
-                <div id="two-boxes">
-
-                    <!--chatbox-->
-                    <div class="box-one">
-                        <div class="section-title">
-                            piclog
-                        </div>
-                        <div class="content">
-                            <a href="https://piclog.blue/profile.php?id=492"><img src="https://piclog.blue/latest.php?id=492"></a>
-                        </div>
-                    </div>
-                    <!--gifypet-->
-                    <div class="box-one">
-                        <div class="section-title">
-                            webrings
-                        </div>
-                        <center>
-                            <div class="content">
-                                <object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#8080ff" type="image/svg+xml" style="width: 100px; height: 100px;"></object><br>
-                                <script src="https://disuko.neocities.org/ring.js"></script>
-                                <script src="https://transring.neocities.org/ring.js"></script>
-                                <a href='https://webring.dinhe.net/prev/http://disuko.neocities.org'><--</a>
-                                <a href="https://webring.dinhe.net/">Retronaut Webring</a>
-                                <a href='https://webring.dinhe.net/next/http://disuko.neocities.org'>--></a>
-                                <a href="https://webring.dinhe.net/random">random</a><br>
-                                <a href="https://allyratworld.com/cafe/rose"><img src="./images/buttons/88x31melo.png"></a>
-                            </div>
-                        </center>
-                    </div>
-
-                </div>
-
-
-                <!--stickers-->
-                <h2 style="position: absolute; top: 350px; right: 100px;">here, have some stickers!</h2>
-                <div id="sticker-container1" class="sticker-container" style="position: absolute; top: 400px; right: 200px; width: 100px;">
-                    <div class="sticker"><img src="./images/stickers/dogsticker.png"></div>
-                </div>
-                <div id="sticker-container2" class="sticker-container" style="position: absolute; top: 400px; right: 200px; width: 100px;">
-                    <div class="sticker"><img src="./images/stickers/ratsticker.png"></div>
-                </div>
-                <div id="sticker-container3" class="sticker-container" style="position: absolute; top: 400px; right: 200px; width: 100px;">
-                    <div class="sticker"><img src="./images/stickers/disukosticker.png"></div>
-                </div>
-                <script src="./sticker.js"></script>
-                
-                <!--bottom box-->
-                <div id="bottombox">
-                    <div class="full-width-box">
-                        <div class="content" >
-                            <center>
-                                <a href="https://disuko.gay"><img src="https://i.postimg.cc/VNJMS2dr/Disuko-Main.gif"/></a>
-                                <a href="https://voidreddev.neocities.org"><img src="https://i.postimg.cc/kg7fQWMj/Red-Stamp.gif" /></a>
-                                <a href="https://redpandastudios.net"><img class="stamp" src="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2Fa642a1d93f94bbe490c38a7ee2428a1d.gif&q=75&f=webp"/></a>
-                                <img src="https://cyber.dabamos.de/88x31/bob.gif"/>
-                                <img src="https://cyber.dabamos.de/88x31/delete-twitter.gif"/>
-                                <img src="https://external-media.spacehey.net/media/sCPhdIMrlCSpgDVV1CPp8McV3Ppygz_q-eAi7Jujqnvc=/https://splattacks.neocities.org/images/graphics/b14.png"/>   
-                            </center>
-                        </div>
-                    </div>
-                    <center>
-                        <script src="//counter.websiteout.com/js/30/0/726/0" type="text/javascript" ></script>
-                        <a href="https://www.imood.com/users/disuko"><img src="https://moods.imood.com/display/uname-disuko/imood.gif" alt="The current mood of disuko at www.imood.com" border="0"></a>
-
-                    </center>
-                </div>
-            </div>
+<img src="images/sukolean.png" class="sukolean">
+<div class="homeContainer parallax-element">
+    <div class="section-title" style="border: 1px solid var(--dkest-color);">
+        welcome to my website!
+    </div>
+    <div class="homeBox">
+        <div class="content">
+            <img src="images/webcorner.png" width="100%">
+            <br>
+            recently, i've been getting really tired of algorithmically driven web, so i made this site!
+            <img src="https://i.imgur.com/NGPqwMq.gif">
+            <strong>last updated:</strong> 6/16/2024
+            <ul>
+                <li>updated homepage!! check out my funky little character!</li>
+            </ul>
+            <img src="https://i.imgur.com/NGPqwMq.gif">
+            <center><img src="images/EnterButton.png" class="enterButton" onclick="window.location.href='homepage.html';"></center>
         </div>
-        
-        <!--winamp player-->
-        <h2 style="position: absolute; top: 500px; left: 10%;  transform: translate(-50%,-50%)">listen to some tunes :3</h2>
-        <div style="width:40px; height:40px; position:absolute; bottom:20%; left:10%; transform: translate(-50%,-50%)">
-                <div id="winamp-container"></div>
-                <script>
-                            const Winamp = window.Webamp;
-                            // All configuration options are optional.
-                            const webamp = new Webamp({
-                    // Optional.
-                    initialTracks: [
-                        {
-                            metaData: {
-                                artist: "disuko",
-                                title: "press del to enter startup",
-                            },
-                            url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/press del to enter startup.mp3",
-                        },
-                        {
-                            metaData: {
-                                artist: "on3ko",
-                                title: "LOSING MY (space)",
-                            },
-                            url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/LOSING MY (space) 5-1-2024.mp3",
-                        },
-                        {
-                            metaData: {
-                                artist: "on3ko",
-                                title: "G37 7H3 FUCK 0NL1N3!!1!!!",
-                            },
-                            url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/GET THE FUCK ONLINE!1!!.mp3",
-                        },
-                        {
-                            metaData: {
-                                artist: "Porter Robinson",
-                                title: "KNOCK YOURSELF OUT XD (on3ko hyperpop bootleg)",
-                            },
-                            url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/KNOCK YOURSELF OUT XD disuko's hyperpop bootleg.mp3",
-                        },
-                        {
-                            metaData: {
-                                artist: "disuko",
-                                title: "ID",
-                            },
-                            url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/90shouse.mp3",
-                        },
-                        {
-                            metaData: {
-                                artist: "disuko",
-                                title: "HOLY F%&KING BINGLE?! WHAT?!",
-                            },
-                            url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/bingle.mp3",
-                        },
-                        {
-                            metaData: {
-                                artist: "disuko",
-                                title: "hotel hallway",
-                            },
-                            url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/hotel hallway.mp3",
-                        },
-                        {
-                            metaData: {
-                                artist: "disuko & Wave Meow",
-                                title: "Lilypad Tea",
-                            },
-                            url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/lilypad.mp3",
-                        },
-                        {
-                            metaData: {
-                                artist: "disuko",
-                                title: "Lush Cave",
-                            },
-                            url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/lushcave.mp3",
-                        },
-                        {
-                            metaData: {
-                                artist: "disuko",
-                                title: "r5p5rp5",
-                            },
-                            url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/r5p5rp5.mp3",
-                        },
-                        {
-                            metaData: {
-                                artist: "disuko",
-                                title: "TRANCEGENDER",
-                            },
-                            url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/trancegender.mp3",
-                        },
-                        {
-                            metaData: {
-                                artist: "disuko",
-                                title: "You've Got Mail!",
-                            },
-                            url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/youvegotmail.mp3",
-                        }
-                    ],
-                    initialSkin: {
-                        url: "https://cdn.jsdelivr.net/gh/disukomusic/cdn/winamp-skins/EAS Purple.wsz"
-                    },
-                });
-                    webamp.renderWhenReady(document.getElementById('winamp-container'));
-                </script>
-            </div>
+    </div>
+</div>
 
-        <!--footer-->
-        <div id="footer">
-        </div>
-    
-        <!-- link sound -->
-        <audio id="link-sound">
-            <source src="" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>
-        <script src="linkSound.js"></script>
-    </body>
+<!--footer-->
+<div id="footer" class="parallax-element"></div>
+
+<!-- link sound -->
+<audio id="link-sound">
+    <source src="" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+<script src="linkSound.js"></script>
+
+<!-- bgm -->
+<audio autoplay>
+    <source src="https://cdn.jsdelivr.net/gh/disukomusic/cdn/music/r5p5rp5.mp3">
+</audio>
+
+<img src="https://99gifshop.neocities.org/items/4/mittel.gif" style="position:fixed; bottom:10px; right:10px;">
+
+<script src="parallax.js"></script>
+
+</body>
 </html>

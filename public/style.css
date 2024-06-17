@@ -82,7 +82,6 @@ ul {
 }
 #wrapper {
   margin: 0 auto;
-  max-width: 860px;
   overflow-y: auto; /* Only vertical scrolling */
   padding-bottom: 80px;
 }
@@ -98,7 +97,6 @@ ul {
 #two-boxes {
   display: flex;
   flex-wrap: wrap;
-  max-width: 900px;
 }
 .box-one,
 .box-two,
@@ -109,11 +107,12 @@ ul {
   border: 1px solid var(--dkest-color);
   background-color: var(--lt-color);
   overflow: auto;
+  flex: 1 1 45%
 }
 .box-one,
 .box-two {
   height: auto;
-  width: 418px;
+  width: 50%;
   margin-left: 5px;
 }
 .box-one {
@@ -498,4 +497,48 @@ textarea {
 #sticker {
   cursor: move;
 }
+
+.sukolean{
+  position: fixed;
+  top:50%;
+  left:500px;
+  transform:translate(-50%,-50%);
+  height: 621px;
+  z-index: 999;
+}
+
+.homeContainer{
+  position: fixed;
+  top:25%;
+  left:650px;
+
+}
+
+.homeBox{
+  border: 1px solid var(--dkest-color);
+  background-color: var(--lt-color);
+  overflow: hidden;
+  padding-left:25px;
+  padding-right:25px;
+  height:520px;
+  width:35vw;
+  align-items: center;
+}
+
+.enterButton{
+  transition: ease-out 0.5s;
+
+}
+
+.enterButton:hover{
+  transform: translate(0px,5px);
+  transition: ease-in-out 0.1s;
+  filter: saturate(50%);
+}
+
+.parallax-element {
+  position: absolute;
+  transition: transform 0.1s ease-out;
+}
+
 
