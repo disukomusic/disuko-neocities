@@ -542,8 +542,10 @@ textarea {
   border: 1px solid var(--dk-color);
   padding: 10px 40px;
   width:35vw;
+  height:100px;
   display: flex;
-  overflow: auto;
+  overflow: scroll;
+  overflow-y: clip;
 }
 
 
