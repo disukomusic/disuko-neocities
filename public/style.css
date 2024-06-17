@@ -505,7 +505,7 @@ textarea {
 
 .homeContainer{
   position: fixed;
-  top:25%;
+  top:20%;
   left:650px;
 
 }
@@ -514,11 +514,11 @@ textarea {
   border: 1px solid var(--dkest-color);
   background-color: var(--lt-color);
   overflow: hidden;
-  padding-left:25px;
-  padding-right:25px;
-  height:520px;
+  padding-left:40px;
+  padding-right:40px;
   width:35vw;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 .enterButton{
@@ -536,5 +536,16 @@ textarea {
   position: absolute;
   transition: transform 0.1s ease-out;
 }
+
+.webrings{
+  background-color: var(--lt-color);
+  border: 1px solid var(--dk-color);
+  padding-left:40px;
+  padding-right:40px;
+  width:35vw;
+  display: flex;
+  overflow: auto;
+}
+
 
 
