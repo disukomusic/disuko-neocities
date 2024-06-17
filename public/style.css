@@ -34,7 +34,7 @@ body a:hover {
 }
 
 #container {
-  max-width: 900px;
+  max-width: 860px;
   margin: 0px auto 0;
   height: 100%;
 }
@@ -126,14 +126,10 @@ ul {
 .box-three {
   margin-left: 5px;
   margin-top: 5px;
-  width: 260px;
-  height: 326px;
 }
 .box-four {
   margin-top: 5px;
   margin-left: 5px;
-  width: 581px;
-  height: 326px;
 }
 .section-title {
   text-align: center;
