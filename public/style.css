@@ -548,5 +548,13 @@ textarea {
   overflow-y: clip;
 }
 
+.bgm{
+  position: fixed;
+  bottom:0;
+  left:0;
+  height:20px;
+  width:190px;
+}
+
 
 
