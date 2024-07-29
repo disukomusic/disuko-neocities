@@ -1,7 +1,7 @@
 ﻿(function() {
     // Create the panda icon element
     const pandaIcon = document.createElement('img');
-    pandaIcon.src = './images/bootsmarker.gif'; // Replace with the actual URL of the panda icon
+    pandaIcon.src = './images/bootsmarker.png'; // Replace with the actual URL of the panda icon
     pandaIcon.style.width = '64px';
     pandaIcon.style.height = 'auto';
     pandaIcon.style.cursor = 'pointer';
@@ -9,11 +9,11 @@
 
     // List of rocket boot part URLs
     const rocketBootParts = [
-        './images/bootsmarker.gif',
-        './images/bootsmarker.gif',
-        './images/bootsmarker.gif',
-        './images/bootsmarker.gif',
-        './images/bootsmarker.gif'
+        './images/bootsmarker.png',
+        './images/bootsmarker.png',
+        './images/bootsmarker.png',
+        './images/bootsmarker.png',
+        './images/bootsmarker.png'
     ];
 
     // Function to download a file
