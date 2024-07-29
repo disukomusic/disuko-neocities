@@ -28,23 +28,21 @@
 
     // Add click event listener to the panda icon
     pandaIcon.addEventListener('click', () => {
-        // Perform bounce animation
+        // Perform bounce animation: grow and then shrink while fading out
         pandaIcon.style.transform = 'scale(1.2)';
         setTimeout(() => {
-            pandaIcon.style.transform = 'scale(1)';
+            pandaIcon.style.transform = 'scale(0)';
+            pandaIcon.style.opacity = '0';
         }, 250);
 
         // Download a random rocket boot part
         const randomPart = rocketBootParts[Math.floor(Math.random() * rocketBootParts.length)];
         downloadFile(randomPart);
 
-        // Make the icon disappear after bounce animation
+        // Remove the icon after the animation
         setTimeout(() => {
-            pandaIcon.style.opacity = '0';
-            setTimeout(() => {
-                pandaIcon.remove();
-            }, 500); // Ensure it matches the fade-out duration
-        }, 500); // Timing matches the animation duration
+            pandaIcon.remove();
+        }, 750); // Ensure it matches the animation duration
     });
 
     // Replace a random image on the page with the panda icon
