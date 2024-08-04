@@ -545,7 +545,7 @@ textarea {
   height:100px;
   display: flex;
   overflow: scroll;
-  overflow-y: clip;
+  overflow-y: scroll;
 }
 
 .bgm{
