@@ -2,9 +2,326 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>jcore</title>
+    <link href="https://img.plasmic.app/img-optimizer/v1/img?src=https%3A%2F%2Fimg.plasmic.app%2Fimg-optimizer%2Fv1%2Fimg%2F771162480e81310b4b949dc6d00360b2.png&w=48&q=75&f=webp" rel="icon" type="image/png" />
+
+    <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
+
+    <style>
+        @font-face {
+            font-family: 'NeuroPolitical';
+            src: url("../neuropolitical.otf");
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: NeuroPolitical, Consolas, sans-serif;
+            background-image: url("../images/jdmbg.gif");
+            background-size: contain;
+        }
+        
+        h1{
+            color:black !important;
+        }
+
+        p, a {
+            font-family: NeuroPolitical, Consolas, sans-serif;
+            color: #00f0ff;
+            text-decoration: none;
+        }
+        
+        body :hover{
+            color: magenta;
+            cursor: default;
+        }
+
+        a:hover {
+            color: magenta;
+            cursor: pointer !important;
+        }
+
+        @keyframes wave {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .backlink {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            color: #00f0ff;
+            padding: 5px;
+            background-color: white;
+            border: 2px solid #00f0ff;
+            box-shadow: 2px 2px 0 black; /* Adjust the offset as needed */
+        }
+
+        .backlink:hover {
+            border: 2px solid magenta;
+        }
+
+        .backlink:hover a {
+            color: magenta;
+        }
+
+        .box-container {
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .box {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            text-align: left;
+            margin: 10px;
+            border: 2px solid #00f0ff;
+            box-shadow: 2px 2px 0 black; /* Adjust the offset as needed */
+        }
+
+        .box.middle {
+            flex: 2;
+            position: relative;
+        }
+
+        button {
+            height: 31px;
+            background-color: white;
+            border: 2px solid #00f0ff;
+            box-shadow: 2px 2px 0 black; /* Adjust the offset as needed */
+        }
+
+        button:hover {
+            border: 2px solid magenta;
+        }
+
+        button:hover a {
+            color: magenta;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px; 
+            width:100%;
+        }
+
+        .grid-item {
+            background-color: #f0f0f0; 
+            padding: 5px; 
+        }
+        
+        .grid-item p {
+            color: black;
+
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto; 
+            display: block; 
+        }
+
+        .text-block {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 100vw; 
+            gap: 1px;
+            align-content: flex-start;
+        }
+
+        .text-item {
+            flex: 1 1 auto;
+            text-align: center;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: calc(10px + 1vw);
+            color: magenta !important;
+            text-decoration: none !important;
+        }
+
+        .text-item:hover {
+            color: #00f0ff !important;
+            cursor: pointer !important;
+        }
+
+    </style>
 </head>
 <body>
-under construction :3
+<a href="../shrines.html" class="backlink"> back to shrines</a>
+<p></p>
+<img src="../images/jedmtext.png">
+<p></p>
+<!--navigation-->
+<div class="nav-box">
+    <button><a href="../homepage.html">home</a></button>
+    <button><a href="../links.html">links</a></button>
+    <button><a href="../collections.html">collections</a></button>
+    <button><a href="../greenhouse.html">greenhouse</a></button>
+    <button><a href="../site-updates.html">site updates</a></button>
+</div>
+<div class="box-container">
+    <div class="box">
+        <h1>ARTISTS</h1>
+        <div class="text-block">
+            <div class="text-item"><a href="https://www.google.com/search?q=CAMELLIA" target="_blank">CAMELLIA</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=PSYQUI" target="_blank">PSYQUI</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=YUC'E" target="_blank">YUC'E</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=T+PAZOLITE" target="_blank">T+PAZOLITE</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=LAUR" target="_blank">LAUR</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=AKIRA+COMPLEX" target="_blank">AKIRA COMPLEX</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=KOBAYRO" target="_blank">KOBAYRO</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=TANGER MUSIC" target="_blank">TANGER</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=SCHWANK" target="_blank">SCHWANK</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=ZEKK" target="_blank">ZEKK</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=REQUIRE MUSIC" target="_blank">REQUIRE</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=NANAHIRA" target="_blank">NANAHIRA</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=SYNTHION" target="_blank">SYNTHION</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=REEK MUSIC" target="_blank">REEK</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=AWFULESS" target="_blank">AWFULESS</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=JINOBEATS" target="_blank">JINOBEATS</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=REDALICE" target="_blank">REDALICE</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=P*LIGHT" target="_blank">P*LIGHT</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=MYLK" target="_blank">MYLK</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=USAO MUSIC" target="_blank">USAO</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=DJ+GENKI" target="_blank">DJ GENKI</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=KOTONOHOUSE" target="_blank">KOTONOHOUSE</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=roər" target="_blank">ROƏR</a></div>
+            <div class="text-item"><a href="https://www.google.com/search?q=DISUKO" target="_blank">DISUKO</a></div>
+        </div>
+        <br>
+        <iframe style="border-radius:0px" src="https://open.spotify.com/embed/playlist/1XT5yERH2kJivICobXpBV9?utm_source=generator&theme=0" width="100%" height=768px frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    </div>
+    <div class="box middle">
+        <p>
+            I'm a huge fan of Rhythm Game Soundtracks and japanese hardore edm!
+        </p>
+        
+        <center>
+            <img src="https://media.tenor.com/oNis_mtL3B4AAAAi/camellia-pouce.gif" width="10%">
+            <img src="https://media.tenor.com/oNis_mtL3B4AAAAi/camellia-pouce.gif" width="10%">
+            <img src="https://media.tenor.com/oNis_mtL3B4AAAAi/camellia-pouce.gif" width="10%">
+            <img src="https://media.tenor.com/oNis_mtL3B4AAAAi/camellia-pouce.gif" width="10%">
+            <img src="https://media.tenor.com/oNis_mtL3B4AAAAi/camellia-pouce.gif" width="10%">
+            <img src="https://media.tenor.com/oNis_mtL3B4AAAAi/camellia-pouce.gif" width="10%">
+            <img src="https://media.tenor.com/oNis_mtL3B4AAAAi/camellia-pouce.gif" width="10%">
+            <img src="https://media.tenor.com/oNis_mtL3B4AAAAi/camellia-pouce.gif" width="10%">
+            <img src="https://media.tenor.com/oNis_mtL3B4AAAAi/camellia-pouce.gif" width="10%">
+        
+        </center>
+
+        <p>this interest started in around 2018 when i found the artist <strong>Snail's House</strong> and began listening
+        to similar artists recommended by Spotify's algorithm. discovering <strong>YUC'e</strong> and
+            <strong>Psyqui</strong> was my first step into the 
+        realm of the more hardstyle and rhythm game oriented tracks! I even made a few of my own tracks and started the
+            online alias <strong>Disuko</strong> which i have used to this day :3 </p>
+        <center>
+
+        <img src="https://media.tenor.com/Kor7vsvUZ_8AAAAM/watching-noriken.gif" width="30%">
+        <img src="https://media.tenor.com/RJgFMKsHa50AAAAM/hardcore-tanoc-tanoc.gif" width="30%">
+        <img src="https://media.tenor.com/dlgzuu1HOX4AAAAM/tanoc-hardcore.gif" width="30%">
+        </center>
+        <p>
+        the first song that i would consider the tipping point for my deep dive into the genre was "CAN I FRIEND YOU ON BASSBOOK? LOL" 
+            (bassline yatteru) by <strong>Camellia</strong> and <strong>Nanahira</strong>. The kawaii sounds combined with Camellia's crazy arrangement and sound design skills
+        really piqued the interest of me and one of my friends. I started branching out into other artists in the scene, notably those from 
+            the record label <strong>Hardcore Tano*C</strong> through their multi artist compilations. Inspired by Camellia's album <strong>UUFO</strong>, I produced and released
+            <strong>Interdimensional Ice Cream Parlor</strong> in early 2020. 
+        </p>
+        <center>
+
+        <img src="https://media.tenor.com/i0RrMSYzrSsAAAAM/wysi-lore.gif" width="33%">
+        <img src="https://i.redd.it/j9k8h37h6em61.gif" width="66%">
+        </center>
+        <p>
+            While I haven't found myself listening to quite as much jcore as I used to back in high school, (pivoting a 
+            bit more towards hyperpop, punk, and dariacore) the foundations of my love for music production and expression 
+            through sound originate in listening to japanese hardcore music, so it carries a very special place in my heart
+            and sense of self!
+        </p>
+        <center>
+
+        <img src="https://media.tenor.com/q7cKiYLGi60AAAAi/osu-gif.gif" width="15%">
+        <img src="https://media.tenor.com/q7cKiYLGi60AAAAi/osu-gif.gif" width="15%">
+        <img src="https://media.tenor.com/q7cKiYLGi60AAAAi/osu-gif.gif" width="15%">
+        <img src="https://media.tenor.com/q7cKiYLGi60AAAAi/osu-gif.gif" width="15%">
+        <img src="https://media.tenor.com/q7cKiYLGi60AAAAi/osu-gif.gif" width="15%">
+        <img src="https://media.tenor.com/q7cKiYLGi60AAAAi/osu-gif.gif" width="15%">
+            <iframe width="100%" height="356px" src="https://www.youtube.com/embed/Q8zsozadw8g?si=mfgobMwnnlkTTZ2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <img src="https://media2.giphy.com/media/Rhwswjtn02EpDlkw0Y/giphy.gif" width="23%">
+        <img src="https://media2.giphy.com/media/Rhwswjtn02EpDlkw0Y/giphy.gif" width="23%">
+        <img src="https://media2.giphy.com/media/Rhwswjtn02EpDlkw0Y/giphy.gif" width="23%">
+        <img src="https://media2.giphy.com/media/Rhwswjtn02EpDlkw0Y/giphy.gif" width="23%">
+        </center>
+
+
+
+
+    </div>
+    <div class="box">
+        <h1>ALBUMS</h1>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="https://f4.bcbits.com/img/a2760613898_65">
+                <p>U.U.F.O. - CAMELLIA</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://f4.bcbits.com/img/a1917029384_65">
+                <p>HARDCORE SYNDROME 14 - TANO*C</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://i1.sndcdn.com/artworks-000199815334-zqnld0-t500x500.jpg">
+                <p>REALITY DISTORTION - AKIRA COMPLEX & CAMELLIA</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://f4.bcbits.com/img/a2598162469_65">
+                <p>FUTURE CAKE - YUC'E</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://f4.bcbits.com/img/a0276941267_10.jpg">
+                <p>SPD GAR 001 - MEGAREX</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b273b271d4283192fe9258ac6b8d">
+                <p>4ORCE! - NANAHIRA & CAMELLIA</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="https://f4.bcbits.com/img/a3430792345_5.jpg">
+                <p>INTER DIMENSIONAL ICE CREAM PARLOR - DISUKO</p>
+            </div>
+
+
+            <div class="grid-item">
+                <img src="https://i.scdn.co/image/ab67616d0000b27328a78b1eac2c2a49d18fcd5b">
+                <p>ASHED WINGS- CAMELLIA</p>
+            </div>
+            
+            <div class="grid-item">
+                <img src="https://f4.bcbits.com/img/a2440909950_10.jpg">
+                <p>BATTLE OF AETHERIA - JINOBEATS</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
 </body>
 </html>
