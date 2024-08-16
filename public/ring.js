@@ -9,6 +9,7 @@
                 "https://on3ko.lol",
                 "https://midnightsyntax.neocities.org",
                 "https://www.redpandastudios.net",
+                "https://thiefly.xyz/"
             ],
             // PREV and NEXT get replaced with neighboring site urls
             stylesheet: "https://disuko.neocities.org/RPSWebring.css",
