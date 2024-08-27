@@ -6,7 +6,7 @@
             sites: [
                 "https://disuko.neocities.org",
                 "https://voidreddev.neocities.org",
-                "https://on3ko.lol",
+                "https://on3ko.lol/main/",
                 "https://midnightsyntax.neocities.org",
                 "https://www.redpandastudios.net",
                 "https://thiefly.xyz/"
