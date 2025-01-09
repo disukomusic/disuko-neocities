@@ -8,7 +8,7 @@
                 "https://voidreddev.neocities.org",
                 "https://midnightsyntax.neocities.org",
                 "https://www.redpandastudios.net",
-                "https://honeyteaaa.art",
+                "https://www.honeyteaaa.art/home/",
                 "https://thiefly.xyz/"
             ],
             // PREV and NEXT get replaced with neighboring site urls
