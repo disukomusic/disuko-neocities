@@ -24,103 +24,53 @@
                 <div class="full-width-box">
                     <div class="section-title">site updates</div>
                     <div class="content">
-                        <a href="https://github.com/disukomusic/disuko-neocities/commits/main/">see all github commits for minor updates!</a>
 
-                        <strong>6/23/2025</strong>
-                        <ul>
-                            <li>updated WIP project</li>
-                        </ul>
-                        
-                        <strong>4/8/2025</strong>
-                        <ul>
-                            <li>updated WIP project</li>
-                        </ul>
-                        
-                        <strong>12/10/2024</strong>
-                        <ul>
-                            <li>new <a href="./shrines/jcore.html">jcore shrine</a>! </li>
-                        </ul>
-                        
-                        <strong>8/4/2024</strong>
-                        <ul>
-                            <li>new <a href="./shrines/jcore.html">jcore shrine</a>! </li>
-                        </ul>
-                        
-                        <strong>7/6/2024</strong> 
-                        <ul>
-                            <li>new shrines page!</li>
-                            <li><a href="./shrines/webcore.html">oldweb shrine</a> :3</li>
-                        </ul>
-                        
-                        <h2>7/5/2024</h2>
-                        <ul>
-                            <li>new project update on homepage :3</li>
-                        </ul>
+                        <div id="commits"></div>
 
+                        <script>
+                            const owner = 'disukomusic';
+                            const repo = 'disuko-neocities';
+                            const branch = 'main';
+                            const commitContainer = document.getElementById('commits');
 
-                        <h2>7/3/2024</h2>
-                        <ul>
-                            <li>home page rearranged</li>
-                            <li>new blinkies and stamps section</li>
-                            <li>background music!</li>
-                        </ul>
-                        
-                        <h2>6-16-2024</h2>
-                        <ul>
-                            <li>brand new shiny landing page!</li>
-                            <li>new slaps on the postbox</li>
-                            <li>new links</li>
-                            <li>pokemon clique</li>
-                        </ul>
-                        <h2>6-15-2024</h2>
-                        <ul>
-                            <li>migrated guestbook to  <a href="https://disuko.atabook.org">atabook</a></li>
-                            <li>added <a href="greenhouse.html">greenhouse!!</a></li>
-                            <li>added more links to links page</li>
-                            <li>added mood to homepage footer thing</li>
-                        </ul>
-                        <h2>6-14-2024</h2>
-                        <ul>
-                            <li>added <a href="./postbox.html">postbox</a> page</li>
-                        </ul>
-                        
-                        <h2>5-10-2024</h2>
-                        <ul>
-                            <li>new webring</li>
+                            async function fetchCommits() {
+                                const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/commits?sha=${branch}`);
+                                const data = await response.json();
 
-                        </ul>
-                        
-                        <h2>5-9-2024</h2>
-                        <ul>
-                            <li>piclog on homepage!</li>
+                                const commitsByDate = {};
 
-                        </ul>
-                        
-                        <h2>5-8-2024</h2>
-                        <ul>
-                            <li>status on homepage! need to find a better place for it, same with <a href="https://piclog.blue/profile.php?id=492">piclog</a></li>
-                            <li>webrings on homepage, rip gifypet</li>
-                            <li>|--red panda studios webring!</li>
+                                data.forEach(commit => {
+                                    const date = new Date(commit.commit.author.date);
+                                    const formattedDate = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
+                                    const message = commit.commit.message.split('\n')[0]; // First line only
 
-                        </ul>
-                        
-                        <h2>5-7-2024</h2>
-                        <ul>
-                            <li>new link sound that's more pleasant</li>
-                            <li>88x31 button and chatbox on homepage!!!</li>
-                            <li>also, lots of updates over on <a href="https://on3ko.lol">on3ko.lol</a>!!</li>
-    
-                        </ul>
-                        
-                        <h2>5-5-2024</h2>
-                        <ul>
-                            <li>cute little bullet points!</li>
-                            <li>labels for homepage fun stuff (music player and stickers)</li>
-                            <li>added link hover sound</li>
-                            <li>updated collections page, trying out iframe approach</li>
-                            <li>added some more sites to my links page</li>
-    
-                        </ul>
+                                    if (!commitsByDate[formattedDate]) {
+                                        commitsByDate[formattedDate] = [];
+                                    }
+                                    commitsByDate[formattedDate].push(message);
+                                });
+
+                                for (const date in commitsByDate) {
+                                    const dateElem = document.createElement('div');
+                                    dateElem.className = 'commit-date';
+                                    dateElem.innerHTML = `<strong>${date}</strong>`;
+
+                                    const ul = document.createElement('ul');
+                                    commitsByDate[date].forEach(msg => {
+                                        const li = document.createElement('li');
+                                        li.textContent = msg;
+                                        ul.appendChild(li);
+                                    });
+
+                                    dateElem.appendChild(ul);
+                                    commitContainer.appendChild(dateElem);
+                                }
+                            }
+
+                            fetchCommits().catch(error => {
+                                commitContainer.innerHTML = `<p>Error loading commits: ${error.message}</p>`;
+                            });
+                        </script>
                     </div>
                 </div>
             </div>

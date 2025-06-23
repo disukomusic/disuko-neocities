@@ -45,10 +45,38 @@
             <br>
             recently, i've been getting really tired of algorithmically driven web, so i made this site!
             <img src="https://i.imgur.com/NGPqwMq.gif">
-            <strong>last updated:</strong> 8/4/2024
-            <ul>
-                <li>new <a href="./shrines/jcore.html">jcore shrine</a>! </li>
-            </ul>
+            <strong>last updated:</strong> <div id="latest-commit"></div>
+
+            <script>
+                const owner = 'disukomusic';
+                const repo = 'disuko-neocities';
+                const branch = 'main';
+                const container = document.getElementById('latest-commit');
+
+                async function fetchLatestCommit() {
+                    const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/commits?sha=${branch}&per_page=1`);
+                    const data = await response.json();
+
+                    if (!data.length) {
+                        container.innerHTML = '<p>No commits found.</p>';
+                        return;
+                    }
+
+                    const commit = data[0];
+                    const date = new Date(commit.commit.author.date);
+                    const formattedDate = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
+                    const message = commit.commit.message.split('\n')[0];
+
+                    container.innerHTML = `
+            <strong>${formattedDate}</strong>
+            <ul><li>${message}</li></ul>
+        `;
+                }
+
+                fetchLatestCommit().catch(err => {
+                    container.innerHTML = `<p>Error fetching commit: ${err.message}</p>`;
+                });
+            </script>
             <img src="https://i.imgur.com/NGPqwMq.gif">
             <center><img src="images/EnterButton.png" class="enterButton" onclick="window.location.href='homepage.html';"></center>
         </div>
