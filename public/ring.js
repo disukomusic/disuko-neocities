@@ -4,13 +4,13 @@
 // webring settings
         webring = {
             sites: [
-                "https://disuko.neocities.org",
-                "https://voidreddev.neocities.org",
-                "https://midnightsyntax.neocities.org",
-                "https://www.redpandastudios.net",
+                "https://disuko.neocities.org/",
+                "https://voidreddev.neocities.org/",
+                "https://midnightsyntax.neocities.org/",
+                "https://www.redpandastudios.net/",
                 "https://www.honeyteaaa.art/home/",
                 "https://thiefly.xyz/",
-                "https://on3ko.lol"
+                "https://on3ko.lol/"
             ],
             // PREV and NEXT get replaced with neighboring site urls
             stylesheet: "https://disuko.neocities.org/RPSWebring.css",
