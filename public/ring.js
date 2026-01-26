@@ -8,7 +8,7 @@
                 "https://voidreddev.neocities.org/",
                 "https://midnightsyntax.neocities.org/",
                 "https://www.redpandastudios.net/",
-                "https://www.honeyteaaa.art/home/",
+                "https://www.honeyteaaa.art/",
                 "https://thiefly.xyz/",
                 "https://on3ko.lol/"
             ],
@@ -31,7 +31,6 @@
 
 
 
-    // all of the actual code
     webring.index = location.href.startsWith("file://") ? 0 : webring.sites.findIndex(url => location.href.startsWith(url));
     if (webring.index == -1) document.currentScript.outerHTML = webring.error;
     else {
